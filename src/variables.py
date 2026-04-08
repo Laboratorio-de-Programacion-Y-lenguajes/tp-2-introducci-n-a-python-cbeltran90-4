@@ -12,6 +12,7 @@ def crear_saludo(nombre: str) -> str:
     Ejemplo: crear_saludo("Ana") -> "Hola, Ana!"
     """
     # TU CÓDIGO AQUÍ
+    return f"Hola, {nombre}!"
     pass
 
 
@@ -20,6 +21,7 @@ def suma_enteros(a: int, b: int) -> int:
     Retorna la suma de dos enteros.
     """
     # TU CÓDIGO AQUÍ
+    return a + b
     pass
 
 
@@ -28,6 +30,10 @@ def es_mayor_de_edad(edad: int) -> bool:
     Retorna True si edad >= 18, False caso contrario.
     """
     # TU CÓDIGO AQUÍ
+    if edad >= 18:
+        return True
+    else:
+        return False
     pass
 
 
@@ -38,6 +44,8 @@ def tipo_de_dato(valor) -> str:
              tipo_de_dato("hola") -> "str"
     """
     # TU CÓDIGO AQUÍ
+    return type(valor).__name__
+
     pass
 
 
@@ -47,4 +55,5 @@ def convertir_a_float(valor: str) -> float:
     Ejemplo: convertir_a_float("3.14") -> 3.14
     """
     # TU CÓDIGO AQUÍ
+    return float(valor)
     pass
